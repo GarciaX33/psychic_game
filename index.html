@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Psychic Game JS</title>
 </head>
+
 <body>
-    
+
+    <div class="jumbotron">
+        <h1>Guess the letter I'm thinking of</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <ul id="results" class="list-group">
+                    <li class="list-group-item" id="wins">Wins: (# of times the user has guessed the letter correctly)
+                    </li>
+                    <li class="list-group-item" id="losses">Losses: (# of times the user has failed to guess the letter
+                        correctly after exhausting all guesses)</li>
+                    <li class="list-group-item" id="guessesLeft">Guesses Left: (# of guesses left. This will update)
+                    </li>
+                    <li class="list-group-item" id="userLetters">Your Guesses So Far: (the specific letters that the user
+                        typed. Display these until the user either wins or loses.)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/game.js"></script>
+
 </body>
+
 </html>
